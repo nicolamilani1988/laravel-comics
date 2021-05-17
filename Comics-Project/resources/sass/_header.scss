@@ -1,0 +1,45 @@
+header{
+    #partners{
+        background-color: #0282F9;
+        color:white;
+        .container{
+            padding: 5px 0;
+            justify-content: flex-end;
+            div{
+                margin-left: 50px;
+            }
+        }
+    }
+    #navbar-menu{
+        .container{
+           justify-content: space-between;
+           align-items: center;
+           padding: 20px;
+           .logo{
+               width: 80px;
+               img{
+                   width: 100%;
+               }
+           } 
+           .menu{
+               ul{
+                   display: flex;
+                   li{
+                        margin: 0 10px;
+                   }
+                   li.active{
+                       color: #0282F9;
+                       border-bottom: 2px solid #0282F9;
+                   }
+               }
+           }
+           .searchbar{
+            border-bottom: 2px solid #0282F9;
+               input{
+                   width: 100px;
+                   border: none;
+               }
+           }
+        }
+    }
+}

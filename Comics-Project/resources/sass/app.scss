@@ -1,1 +1,26 @@
-//
+@import 'header';
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+ul li{
+    list-style-type: none;
+}
+a{
+    color:inherit;
+    text-decoration: none;
+}
+.container{
+    width: 1140px;
+    margin: auto;
+    display: flex;
+}
+.small-text{
+    font-size: 0.7rem;
+}
+
+
