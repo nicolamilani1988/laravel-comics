@@ -1,6 +1,6 @@
 <header>
     <!-- blu section on top -->
-    <section id="partners">
+    <section id="partners" class="bg-blue-text-white">
         <div class="container small-text">
             <div>
                 DC POWER VISA

@@ -1,7 +1,5 @@
 header{
     #partners{
-        background-color: #0282F9;
-        color:white;
         .container{
             padding: 5px 0;
             justify-content: flex-end;
@@ -14,7 +12,7 @@ header{
         .container{
            justify-content: space-between;
            align-items: center;
-           padding: 20px;
+           padding: 20px 0;
            .logo{
                width: 80px;
                img{
