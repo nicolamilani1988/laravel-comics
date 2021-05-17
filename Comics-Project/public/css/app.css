@@ -189,8 +189,6 @@ main #buy .container ul li {
 }
 
 main #buy .container ul li img {
-  width: 40px;
-  height: 40px;
   margin-right: 10px;
 }
 
@@ -202,6 +200,7 @@ main #buy .container ul li img {
 
 body {
   font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
 }
 
 ul li {

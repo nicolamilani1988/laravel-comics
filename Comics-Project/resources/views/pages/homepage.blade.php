@@ -44,8 +44,13 @@
                 <ul>
                     @foreach ($actions as $action)
                         <li>
-                            <img src="{{$action['path']}}" alt="">
-                            <a href="">{{$action['title']}}</a>
+                            @if ($loop -> index == 3 || $loop -> index == 4)
+                                <img width="20%" src="{{$action['path']}}" alt="">
+                                <a href="">{{$action['title']}}</a>  
+                            @else
+                                <img width="25%" src="{{$action['path']}}" alt="">
+                                <a href="">{{$action['title']}}</a>  
+                            @endif
                         </li>
                     @endforeach
                 </ul>
