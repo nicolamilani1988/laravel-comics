@@ -1,7 +1,9 @@
 @extends('layouts.main-layout')
+
 @section('content')
+
     {{-- jumbotron --}}
-    <section id="jumbotron"></section> 
+    <section id="jumbotron"></section>
     {{-- principal part   --}}
     <main>
         {{-- MAIN first section  --}}
@@ -18,17 +20,20 @@
                     <ul>
                         @foreach ($data as $item)
                             <li class="card">
-                                <div class="img-container">
-                                    <img src="{{$item['thumb']}}" alt="">
-                                </div>
-                                <div class="card-title">
-                                    {{$item['series']}}
-                                </div>
+                                <a href="">
+                                    <div class="img-container">
+                                        <img src="{{$item['thumb']}}" alt="">
+                                    </div>
+                                    <div class="card-title">
+                                       {{$item['series']}}
+                                    </div>
+                                </a>
                             </li>
                         @endforeach
                     </ul>    
                 </div>
-                <div class="more-content">
+                {{-- button --}}
+                <div class="more-button">
                     <button class="bg-blue-text-white">LOAD MORE</button>
                 </div>
             </div>        
@@ -46,6 +51,6 @@
                 </ul>
             </div>
         </nav>
-        
     </main>
+    
 @endsection

@@ -10,15 +10,20 @@
             </div>
         </div>
     </section>
+    {{-- menu nav --}}
     <nav id="navbar-menu">
         <div class="container">
+            {{-- logo --}}
             <div class="logo">
-                <img src="{{ asset('/storage/assets/images/dc-logo.png') }}" alt="">
+                <a href="">
+                    <img src="{{ asset('/storage/assets/images/dc-logo.png') }}" alt="">
+                </a>
             </div>
+            {{-- menu --}}
             <div class="menu">
                 <ul>
                     @foreach ($menu as $link)
-                        @if ($loop->index == 1)
+                        @if ($link == 'COMICS')
                             <li class="active"><a href="">{{$link}}</a></li> 
                         @else
                             <li><a href="">{{$link}}</a></li>  
@@ -26,6 +31,7 @@
                     @endforeach
                 </ul>
             </div>
+            {{-- searchbar --}}
             <div class="searchbar">
                 <input type="text" placeholder="Search">
                 <i class="fas fa-search"></i>
