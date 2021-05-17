@@ -1,5 +1,7 @@
 @import 'header';
 @import 'homepage';
+@import 'footer';
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -26,6 +28,12 @@ a{
 }
 .small-text{
     font-size: 0.7rem;
+}
+.blue-text{
+    color: #0282F9;
+}
+button{
+    cursor: pointer;
 }
 
 

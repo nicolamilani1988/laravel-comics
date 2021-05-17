@@ -243,6 +243,35 @@ class TestController extends Controller
                 'title' => 'DC POWER VISA',
             ],
         ];
-        return view('pages.homepage',compact('menu','data','actions'));
+        $footerLinks = [
+            [
+                'title' => 'DC COMICS',
+                'links' => [
+                    'Characters','Comics','Movies','TV','Games','Videos','News'
+                ]
+            ],
+            [
+                'title' => 'SHOP',
+                'links' => [
+                    'Shop DC','Shop DC Collectibles'
+                ]
+            ],
+            [
+                'title' => 'DC',
+                'links' => [
+                    'Terms of Use','Privacy Policy(New)','Ad Choices','Advertising','Jobs','Subscriptions','Talent Workshops','CPSC Certifications','Ratings','Shop Help','Contact Us'
+                ]
+            ],
+            [
+                'title' => 'SITES',
+                'links' => [
+                    'DC','MAD Magazine','DC Kids','DC Universe','DC Power Visa'
+                ]
+            ],
+        ];
+        $socialNetworks = [
+            '/storage/assets/images/footer-facebook.png','/storage/assets/images/footer-twitter.png','/storage/assets/images/footer-youtube.png','/storage/assets/images/footer-pinterest.png','/storage/assets/images/footer-periscope.png'
+        ];
+        return view('pages.homepage',compact('menu','data','actions','footerLinks','socialNetworks'));
     }
 }

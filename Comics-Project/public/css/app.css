@@ -124,6 +124,75 @@ main #buy .container ul li img {
   margin-right: 10px;
 }
 
+footer #useful-links {
+  color: #959595;
+  padding: 40px 0 0;
+  background-image: url("/storage/assets/images/footer-bg.jpg");
+}
+
+footer #useful-links .container {
+  justify-content: space-between;
+}
+
+footer #useful-links .container .infos {
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+footer #useful-links .container .infos .links-container h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+footer #useful-links .container .infos .links-container li {
+  margin-bottom: 5px;
+}
+
+footer #useful-links .container .footer-logo img {
+  position: relative;
+  top: -100px;
+  right: 100px;
+  width: 400px;
+}
+
+footer #follow-up {
+  background-color: #303030;
+  padding: 40px 0;
+}
+
+footer #follow-up .container {
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer #follow-up .container button {
+  background-color: transparent;
+  border: 2px solid #0282F9;
+  color: white;
+  padding: 10px;
+}
+
+footer #follow-up .container .social-networks {
+  display: flex;
+  align-items: center;
+}
+
+footer #follow-up .container .social-networks h2 {
+  margin-right: 20px;
+}
+
+footer #follow-up .container .social-networks ul {
+  display: flex;
+}
+
+footer #follow-up .container .social-networks ul img {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -156,5 +225,13 @@ a {
 
 .small-text {
   font-size: 0.7rem;
+}
+
+.blue-text {
+  color: #0282F9;
+}
+
+button {
+  cursor: pointer;
 }
 
