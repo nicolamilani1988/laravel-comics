@@ -5,11 +5,65 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        //vertical-align: middle;
     }
 }
 
 main{
     background-color: #1C1C1C;
     color:white;
+    #series{
+        padding-bottom: 20px;
+        .container{
+            flex-direction: column;
+            .title{
+                span{
+                    padding: 10px 20px;
+                }
+            }
+            .content{
+                padding: 50px 10px 0;
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    li.card{
+                        width: calc(100% / 6);
+                        margin-bottom: 50px;
+                        text-transform: uppercase;
+                        img{
+                            width: 160px;
+                            height: 160px;
+                            margin-bottom: 10px;;
+                        }
+                        .card-title{
+                            width: 160px;
+                        }
+                    }
+                }
+                
+            }
+            .more-content{
+                text-align: center;
+                button{
+                    padding: 10px 60px;
+                    border: 1px solid #0282F9;
+                }
+            }    
+        }
+    }
+    #buy{
+        background-color: #0282F9;
+        padding: 50px;
+        ul{
+            display: flex;
+            li{
+                display: flex;
+                align-items: center;
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+    }
 }

@@ -221,6 +221,28 @@ class TestController extends Controller
                 ],
             ],
         ];
-        return view('pages.homepage',compact('menu','data'));
+        $actions = [
+            [
+                'path' => "/storage/assets/images/buy-comics-digital-comics.png",
+                'title' => 'DIGITAL COMICS',
+            ],
+            [
+                'path' => "/storage/assets/images/buy-comics-merchandise.png",
+                'title' => 'DC MERCHANDISE',
+            ],
+            [
+                'path' => "/storage/assets/images/buy-comics-subscriptions.png",
+                'title' => 'SUBSCRIPTION',
+            ],
+            [
+                'path' => "/storage/assets/images/buy-comics-shop-locator.png",
+                'title' => 'COMICS SHOP LOCATOR',
+            ],
+            [
+                'path' => "/storage/assets/images/buy-dc-power-visa.svg",
+                'title' => 'DC POWER VISA',
+            ],
+        ];
+        return view('pages.homepage',compact('menu','data','actions'));
     }
 }

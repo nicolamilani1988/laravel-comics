@@ -10,15 +10,44 @@
         <section id="series">
             <div class="container">
                 {{-- title --}}
-                <div class="bg-blue-text-white">
-                    <h1>CURRENT SERIES</h1>
+                <div class="title">
+                    <h1>
+                        <span class="bg-blue-text-white">CURRENT SERIES</span>
+                    </h1>
                 </div>
                 {{-- content --}}
                 <div class="content">
-                    {{$data[0]['title']}}
+                    <ul>
+                        @foreach ($data as $item)
+                            <li class="card">
+                                <div class="img-container">
+                                    <img src="{{$item['thumb']}}" alt="">
+                                </div>
+                                <div class="card-title">
+                                    {{$item['series']}}
+                                </div>
+                            </li>
+                        @endforeach
+                    </ul>    
+                </div>
+                <div class="more-content">
+                    <button class="bg-blue-text-white">LOAD MORE</button>
                 </div>
             </div>        
         </section>
+        {{-- MAIN second part: actions --}}
+        <nav id="buy">
+            <div class="container">
+                <ul>
+                    @foreach ($actions as $action)
+                        <li>
+                            <img src="{{$action['path']}}" alt="">
+                            <div>{{$action['title']}}</div>
+                        </li>
+                    @endforeach
+                </ul>
+            </div>
+        </nav>
         
     </main>
 @endsection

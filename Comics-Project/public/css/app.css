@@ -60,6 +60,72 @@ main {
   color: white;
 }
 
+main #series {
+  padding-bottom: 20px;
+}
+
+main #series .container {
+  flex-direction: column;
+}
+
+main #series .container .title span {
+  padding: 10px 20px;
+}
+
+main #series .container .content {
+  padding: 50px 10px 0;
+}
+
+main #series .container .content ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+main #series .container .content ul li.card {
+  width: calc(100% / 6);
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+main #series .container .content ul li.card img {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 10px;
+}
+
+main #series .container .content ul li.card .card-title {
+  width: 160px;
+}
+
+main #series .container .more-content {
+  text-align: center;
+}
+
+main #series .container .more-content button {
+  padding: 10px 60px;
+  border: 1px solid #0282F9;
+}
+
+main #buy {
+  background-color: #0282F9;
+  padding: 50px;
+}
+
+main #buy ul {
+  display: flex;
+}
+
+main #buy ul li {
+  display: flex;
+  align-items: center;
+}
+
+main #buy ul li img {
+  width: 50px;
+  height: 50px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
