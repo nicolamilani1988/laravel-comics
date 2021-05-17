@@ -1,9 +1,7 @@
 @extends('layouts.main-layout')
 @section('content')
     {{-- jumbotron --}}
-    <section id="jumbotron">
-        <img src="{{ asset('/storage/assets/images/jumbotron.jpg') }}" alt="">
-    </section> 
+    <section id="jumbotron"></section> 
     {{-- principal part   --}}
     <main>
         {{-- MAIN first section  --}}
@@ -42,7 +40,7 @@
                     @foreach ($actions as $action)
                         <li>
                             <img src="{{$action['path']}}" alt="">
-                            <div>{{$action['title']}}</div>
+                            <a href="">{{$action['title']}}</a>
                         </li>
                     @endforeach
                 </ul>

@@ -10,7 +10,7 @@ header #partners .container div {
 header #navbar-menu .container {
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 header #navbar-menu .container .logo {
@@ -44,15 +44,10 @@ header #navbar-menu .container .searchbar input {
 }
 
 #jumbotron {
+  background-image: url("/storage/assets/images/jumbotron.jpg");
+  background-size: cover;
   width: 100%;
-  height: 500px;
-}
-
-#jumbotron img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 400px;
 }
 
 main {
@@ -79,7 +74,6 @@ main #series .container .content {
 main #series .container .content ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 main #series .container .content ul li.card {
@@ -112,18 +106,22 @@ main #buy {
   padding: 50px;
 }
 
-main #buy ul {
+main #buy .container ul {
+  flex-grow: 1;
+  padding: 0 20px;
   display: flex;
+  justify-content: space-between;
 }
 
-main #buy ul li {
+main #buy .container ul li {
   display: flex;
   align-items: center;
 }
 
-main #buy ul li img {
-  width: 50px;
-  height: 50px;
+main #buy .container ul li img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
 }
 
 * {
