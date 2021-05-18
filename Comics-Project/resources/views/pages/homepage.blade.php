@@ -20,7 +20,7 @@
                     <ul>
                         @foreach ($data as $item)
                             <li class="card">
-                                <a href="">
+                                <a href="{{route('serie',$loop->index)}}">
                                     <div class="img-container">
                                         <img src="{{$item['thumb']}}" alt="">
                                     </div>
