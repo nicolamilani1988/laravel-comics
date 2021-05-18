@@ -1,8 +1,6 @@
 @extends('layouts.main-layout')
 
 @section('content')
-    {{-- jumbotron --}}
-    @include('components.jumbotron')
 
     {{-- principal part   --}}
     <main id="homepage">

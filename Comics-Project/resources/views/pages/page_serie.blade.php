@@ -2,9 +2,6 @@
 
 @section('content')
 
-    {{-- jumbotron --}}
-    @include('components.jumbotron')
-
     {{-- principal part --}}
     <main id="serie">
         {{-- MAIN First Section : blu-bar with pic --}}
