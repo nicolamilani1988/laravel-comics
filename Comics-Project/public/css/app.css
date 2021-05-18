@@ -184,6 +184,7 @@ main #buy .container ul {
 }
 
 main #buy .container ul li {
+  width: 20%;
   display: flex;
   align-items: center;
 }
