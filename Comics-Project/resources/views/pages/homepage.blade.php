@@ -1,11 +1,11 @@
 @extends('layouts.main-layout')
 
 @section('content')
-
     {{-- jumbotron --}}
-    <section id="jumbotron"></section>
+    @include('components.jumbotron')
+
     {{-- principal part   --}}
-    <main>
+    <main id="homepage">
         {{-- MAIN first section  --}}
         <section id="series">
             <div class="container">

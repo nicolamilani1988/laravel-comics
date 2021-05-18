@@ -1,6 +1,8 @@
 @import 'header';
+@import 'jumbotron';
 @import 'footer';
 @import 'homepage';
+@import 'seriepage';
 
 // regole generali
 *{
@@ -33,6 +35,15 @@ a{
 }
 .blue-text{
     color: #0282F9;
+}
+.darkblue-text{
+    color: #003F5E;
+}
+.lightgreen-text{
+    color: #AAE75D;
+}
+.gray-text{
+    color: #9FADC6;
 }
 button{
     cursor: pointer;
