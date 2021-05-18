@@ -10,11 +10,11 @@
         {{-- MAIN First Section : blu-bar with pic --}}
         <section id="pic">
             <div class="mini-container">
-                    <div class="img-container">
-                        <div class="label serie-type">{{$elem['type']}}</div>
-                        <img src="{{$elem['thumb']}}" alt="">
-                        <div class="label gallery"><a href="">VIEW GALLERY</a></div>
-                    </div>
+                <div class="img-container">
+                    <div class="label serie-type">{{$elem['type']}}</div>
+                    <img src="{{$elem['thumb']}}" alt="">
+                    <div class="label gallery"><a href="">VIEW GALLERY</a></div>
+                </div>
             </div>
         </section>
         {{-- MAIN Second Section : description + advertising --}}
@@ -66,7 +66,11 @@
                             <td class="desc-title">Art by:</td>
                             <td class="blue-text">
                                 @foreach ($elem['artists'] as $artist)
-                                    <span>{{$artist}}, </span>
+                                    @if ($loop->last)
+                                        <span>{{$artist}}</span>
+                                    @else
+                                        <span>{{$artist}}, </span>
+                                    @endif
                                 @endforeach
                             </td>
                         </tr>
@@ -74,7 +78,11 @@
                             <td class="desc-title">Written by:</td>
                             <td class="blue-text">
                                 @foreach ($elem['writers'] as $writer)
-                                    <span>{{$writer}}, </span>
+                                    @if ($loop->last)
+                                        <span>{{$writer}}</span>
+                                    @else
+                                        <span>{{$writer}}, </span>
+                                    @endif
                                 @endforeach
                             </td>
                         </tr>
@@ -112,8 +120,7 @@
                             </div>
                         </div>
                     @endif
-                @endforeach
-                
+                @endforeach                
             </div>
         </section>
     </main>

@@ -257,6 +257,7 @@ footer #follow-up .container .social-networks ul img {
   color: white;
   display: flex;
   background-color: #55BA59;
+  border-bottom: 1px solid darkgreen;
   margin: 20px 0;
 }
 
